@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Meraook</string>
+
+    <string name="number">0123456789</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="submit">Submit</string>
+    <string name="resend">Resend</string>
+    <string name="name">Name</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Authentication.GenerateOtpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/otp_icon" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp24" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinview"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp60"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="@dimen/dp5"
+        app:itemCount="6"
+        app:itemRadius="@dimen/dp10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp30"
+        android:clickable="true"
+        android:onClick="ResendOTP"
+        android:text="@string/resend"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/round_background"
+            android:backgroundTint="@color/light_blue"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dp24" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="progress_bar.json"
+            app:lottie_loop="true" />
+    </RelativeLayout>
+
+</LinearLayout>

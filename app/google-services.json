@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "603625764755",
+    "project_id": "meraook-288b1",
+    "storage_bucket": "meraook-288b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603625764755:android:6cf66f8e315dbc48801a66",
+        "android_client_info": {
+          "package_name": "com.meraook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603625764755-7qqa7eumuv8gpj93qrjp3uejn3dbb1oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meraook",
+            "certificate_hash": "eb73b7cb2ab4c135c011c29c1f5a8f649daf2c98"
+          }
+        },
+        {
+          "client_id": "603625764755-0c7ekqnu54gqd34ag1in0f8msmnabf84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS7q_SAJNQxSWQJ-xkh_P5obvePtsEEUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603625764755-0c7ekqnu54gqd34ag1in0f8msmnabf84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

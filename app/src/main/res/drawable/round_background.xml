@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/edit_text_background">
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/dp10"/>
+            <stroke android:width="@dimen/dp2" android:color="@color/grey"/>
+        </shape>
+    </item>
+</layer-list>
