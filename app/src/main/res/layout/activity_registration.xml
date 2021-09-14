@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Authentication.NameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/create_ac_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textSize="@dimen/dp30"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dp20"/>
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@+id/create_ac_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/round_background"
+            android:drawableStart="@drawable/name_icon"
+            android:drawablePadding="@dimen/dp10"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp10"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:textSize="@dimen/dp24" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp60"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/round_background"
+            android:backgroundTint="@color/light_blue"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dp24"
+            android:textStyle="bold"
+            android:layout_below="@+id/name"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="progress_bar.json"
+            app:lottie_loop="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
