@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.meraook">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Meraook">
         <activity
-            android:name=".Authentication.NameActivity"
+            android:name=".Authentication.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.RegistrationActivity"
             android:exported="true" />
         <activity android:name=".Authentication.GenerateOtpActivity" />
         <activity android:name=".Authentication.MobileNumberActivity" />

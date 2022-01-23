@@ -19,7 +19,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.meraook.MainActivity;
 import com.meraook.R;
 
 import java.util.concurrent.TimeUnit;
@@ -64,8 +63,9 @@ public class GenerateOtpActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()){
-                                        Intent intent=new Intent(GenerateOtpActivity.this, MainActivity.class);
+                                        Intent intent=new Intent(GenerateOtpActivity.this, RegistrationActivity.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        intent.putExtra("number",getIntent().getStringExtra("number"));
                                         startActivity(intent);
 
                                         progressLottieAnim.setVisibility(View.INVISIBLE);

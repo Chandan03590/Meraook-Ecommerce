@@ -7,52 +7,31 @@ import java.util.HashMap;
 
 public class SessionManager {
 
-    SharedPreferences userSession;
-    SharedPreferences.Editor editor;
     Context context;
+    SharedPreferences sharedPreferences;
 
-    private static final String IS_LOGIN = "IsLoggedIn";
+    private String mobile_number;
+    private String name;
 
-    public static final String KEY_NAME = "name";
-    public static final String KEY_MOBILE_NUMBER = "mobileNumber";
-
-    public SessionManager(Context _context) {
-        context = _context;
-        userSession = context.getSharedPreferences("userLoginSession", Context.MODE_PRIVATE);
-        editor = userSession.edit();
-    }
-
-    public void createLoginSession(String name, String mobileNumber) {
-
-        editor.putBoolean(IS_LOGIN, true);
-
-        editor.putString(KEY_NAME, name);
-        editor.putString(KEY_MOBILE_NUMBER, mobileNumber);
-
-        editor.commit();
+    public SessionManager(Context context){
+        this.context=context;
+        sharedPreferences=context.getSharedPreferences("userinfo",Context.MODE_PRIVATE);
 
     }
-
-    public HashMap<String, String> getUsersDetailFromSession() {
-        HashMap<String, String> userData = new HashMap<String, String>();
-
-        userData.put(KEY_NAME, userSession.getString(KEY_NAME, null));
-        userData.put(KEY_MOBILE_NUMBER, userSession.getString(KEY_MOBILE_NUMBER, null));
-
-        return userData;
+    public String getMobile_number() {
+        mobile_number=sharedPreferences.getString("userdata","");
+        return mobile_number;
     }
 
-    public boolean checkLogin() {
-
-        if (userSession.getBoolean(IS_LOGIN, false)) {
-            return true;
-        } else
-            return false;
-
+    public void setMobile_number(String mobile_number) {
+        this.mobile_number = mobile_number;
+        sharedPreferences.edit().putString("userdata",mobile_number).commit();
     }
 
-    public void logout() {
-        editor.clear();
-        editor.commit();
+
+    public void removeUser(){
+        sharedPreferences.edit().clear().commit();
     }
+
+
 }

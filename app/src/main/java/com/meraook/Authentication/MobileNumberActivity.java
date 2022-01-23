@@ -32,8 +32,6 @@ public class MobileNumberActivity extends AppCompatActivity {
     private Button getOtpBtn;
     private EditText mobileNumber;
     private LottieAnimationView progressLottieAnim;
-    String name="ck";
-    String mb_number="12345678";
 
 
     @Override
@@ -101,11 +99,6 @@ public class MobileNumberActivity extends AppCompatActivity {
 
             }
         });
-
-        SessionManager sessionManager=new SessionManager(MobileNumberActivity.this);
-        sessionManager.createLoginSession(mb_number,name);
-
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
     }
 

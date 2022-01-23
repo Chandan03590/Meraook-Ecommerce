@@ -1,9 +1,26 @@
 <resources>
     <string name="app_name">Meraook</string>
 
-    <string name="number">0123456789</string>
+    <string name="number">Mobile Number</string>
     <string name="get_otp">Get OTP</string>
     <string name="submit">Submit</string>
     <string name="resend">Resend</string>
     <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Menu -->
+    <string name="home">Home</string>
+    <string name="order">Order</string>
+    <string name="account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Drawable Navigation-->
+    <string name="logout">Logout</string>
 </resources>

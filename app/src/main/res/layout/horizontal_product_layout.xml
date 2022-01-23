@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="9dp"
+    android:elevation="3dp"
+    android:background="@drawable/round_background"
+    android:paddingBottom="8dp"
+    android:id="@+id/horizontal_product_container"
+    android:backgroundTint="#DDDDDC">
+
+    <TextView
+        android:id="@+id/horizontal_scroll_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/horizontal_scroll_layout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_200"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_scroll_layout_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_scroll_layout_btn" />
+
+
+</RelativeLayout>

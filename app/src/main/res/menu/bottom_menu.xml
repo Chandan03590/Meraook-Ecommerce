@@ -6,24 +6,24 @@
         android:id="@+id/home_item"
         android:title="@string/home"
         android:icon="@drawable/home_icon"
-        app:cnb_textColor="@color/black"
-        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/white"
+        app:cnb_iconColor="@color/white"
         app:cnb_backgroundColor="@color/sky_blue"
         />
 
     <item
-        android:id="@+id/add_product"
-        android:title="@string/add_product"
-        android:icon="@drawable/product_management_icon"
-        app:cnb_textColor="@color/black"
-        app:cnb_iconColor="@color/black"
+        android:id="@+id/order"
+        android:title="@string/order"
+        android:icon="@drawable/order_icon"
+        app:cnb_textColor="@color/white"
+        app:cnb_iconColor="@color/white"
         app:cnb_backgroundColor="@color/sky_blue"
         />
     <item
-        android:id="@+id/product_management"
-        android:title="@string/product_management"
-        android:icon="@drawable/detail_icon"
-        app:cnb_textColor="@color/black"
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/name_icon"
+        app:cnb_textColor="@color/white"
         app:cnb_iconColor="@color/white"
         app:cnb_backgroundColor="@color/sky_blue"
         />
