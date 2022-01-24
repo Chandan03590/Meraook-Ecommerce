@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_background"
+    android:elevation="9dp"
+    android:backgroundTint="#D1D1D1"
+    android:layout_margin="9dp">
+
+
+    <TextView
+        android:id="@+id/grid_product_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/grid_product_layout_viewAll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all"
+        android:textSize="12dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+
+    <GridView
+        android:id="@+id/grid_product_layout_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:numColumns="2"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:background="#D1D1D1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/grid_product_layout_viewAll_btn"/>
+
+
+
+</RelativeLayout>

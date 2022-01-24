@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Meraook">
         <activity
+            android:name=".Activity.ProductDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".Authentication.LoginActivity"
             android:exported="true" />
         <activity

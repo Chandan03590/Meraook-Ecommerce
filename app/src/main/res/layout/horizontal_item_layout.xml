@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="3dp"
+    android:layout_marginTop="@dimen/dp2"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@drawable/round_background">
+
+    <ImageView
+        android:id="@+id/h_s_product_image"
+        android:layout_width="130dp"
+        android:layout_height="@dimen/dp150"
+        android:src="@drawable/picture"
+        android:layout_marginLeft="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp3"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/h_s_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redmi 5A"
+        android:textSize="@dimen/dp14"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp8"
+        />
+
+    <TextView
+        android:id="@+id/h_s_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SD 425 Processor"
+        android:textSize="@dimen/dp14"
+        android:textColor="@color/green"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/h_s_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rs.5999/-"
+        android:textSize="@dimen/dp14"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

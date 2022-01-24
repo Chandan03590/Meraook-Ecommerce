@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import androidx.cardview.widget.CardView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.meraook.Adapter.BannerSliderAdapter.BannerViewHolder;
 import com.meraook.Model.BannerSliderModel;
 import com.meraook.R;
@@ -37,7 +38,7 @@ public class BannerSliderAdapter extends SliderViewAdapter<BannerSliderAdapter.B
     @Override
     public void onBindViewHolder(BannerViewHolder viewHolder, int position) {
 
-        Glide.with(context).load(bannerSliderModelList.get(position).getBannerImage()).into(viewHolder.bannerImage);
+        Glide.with(context).load(bannerSliderModelList.get(position).getBannerImage()).apply(new RequestOptions().placeholder(R.drawable.picture)).into(viewHolder.bannerImage);
     }
 
     @Override

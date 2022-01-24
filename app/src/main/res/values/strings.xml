@@ -23,4 +23,7 @@
 
     <!--Drawable Navigation-->
     <string name="logout">Logout</string>
+
+    <string name="deals">Deals of the Day</string>
+    <string name="view_all">View All</string>
 </resources>
